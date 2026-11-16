@@ -1,0 +1,58 @@
+{
+  "model": "IsolationForest(contamination=0.1, n_estimators=300, random_state=42)",
+  "model_version": "v2.0.0",
+  "feature_order": [
+    "train_density",
+    "track_occupancy",
+    "pending_requests",
+    "available_capacity",
+    "scheduled_hour",
+    "day_of_week"
+  ],
+  "feature_schema": {
+    "numeric_features": [
+      "train_density",
+      "track_occupancy",
+      "pending_requests",
+      "available_capacity",
+      "scheduled_hour",
+      "day_of_week"
+    ]
+  },
+  "target": "is_anomaly",
+  "training_seed": 42,
+  "baseline_metrics": {
+    "accuracy": 0.98625,
+    "precision": 1.0,
+    "recall": 0.8625,
+    "f1": 0.9261744966442953,
+    "confusion_matrix": [
+      [
+        720,
+        0
+      ],
+      [
+        11,
+        69
+      ]
+    ]
+  },
+  "metrics": {
+    "accuracy": 0.99125,
+    "precision": 0.9506172839506173,
+    "recall": 0.9625,
+    "f1": 0.9565217391304348,
+    "confusion_matrix": [
+      [
+        716,
+        4
+      ],
+      [
+        3,
+        77
+      ]
+    ]
+  },
+  "dataset_provenance": "synthetic operating-data generation with deliberately abnormal occupancy and queue patterns",
+  "trained_at": "2026-10-17T01:11:52.463783+00:00"
+}

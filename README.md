@@ -1,2 +1,8 @@
-# rail_proj
-RAILOPS-AI is a software platform for managing railway operations. Its central job is to take operational requests, such as needing a track, platform, or other resource at a certain time. It processes them, decides how to allocate resources, and uses machine learning to support those decisions. 
+# pytest cache directory #
+
+This directory contains data from the pytest's cache plugin,
+which provides the `--lf` and `--ff` options, as well as the `cache` fixture.
+
+**Do not** commit this to version control.
+
+See [the docs](https://docs.pytest.org/en/stable/how-to/cache.html) for more information.
